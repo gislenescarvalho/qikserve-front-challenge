@@ -1,22 +1,20 @@
 import React from "react";
-import {
-  useAppDispatch,
-  useAppSelector,
-} from "../../hooks/useAppDispatchSelector";
-import { RootState } from "../../store";
-import { increment, decrement } from "../../features/counter/counterSlice";
+import { QuantityButton, QuantityControl } from "../Modal/styles";
 
-const Counter: React.FC = () => {
-  const count = useAppSelector((state: RootState) => state.counter.value);
-  const dispatch = useAppDispatch();
-
+interface Props {
+  quantity;
+  setQuantity;
+}
+const Counter: React.FC<Props> = ({ quantity, setQuantity }) => {
   return (
     <>
-      <div>
-        <button onClick={() => dispatch(decrement())}>-</button>
-        <span>{count}</span>
-        <button onClick={() => dispatch(increment())}>+</button>
-      </div>
+      <QuantityControl>
+        <QuantityButton onClick={setQuantity} disabled={quantity === 1}>
+          −
+        </QuantityButton>
+        <span>{quantity}</span>
+        <QuantityButton onClick={setQuantity}>+</QuantityButton>
+      </QuantityControl>
     </>
   );
 };
