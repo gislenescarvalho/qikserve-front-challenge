@@ -1,0 +1,33 @@
+{
+    "common": { 
+        "menu": "Menu",
+        "login": "Entrar",
+        "contact": "Contato",
+        "emptyCart": "Seu carrinho está vazio",
+        "cancel": "Cancelar",
+        "tabs": {
+            "burgers": "Hamburguers",
+            "drinks": "Drinks",
+            "desserts": "Sobremesas"
+        },
+        "search": "Pesquisar itens do menu",
+        "modal": {
+            "close": "Fechar",
+            "addToOrder": "Adicionar ao pedido",
+            "chooseSize": "Escolha o tamanho",
+            "selectOneOption": "Selecione uma opção"
+        },
+        "cart": {
+            "title": "Carrinho",
+            "total": "Total",
+            "clear": "Limpar carrinho",
+            "subtotal": "Subtotal"
+        }
+     },
+    "mobile" : {
+      "viewAllergyInfo": "Ver informação de alergia",
+      "checkoutNow": "Finalizar pedido",
+      "yourBasket": "Seu carrinho",
+      "items": "itens"
+    }
+}
